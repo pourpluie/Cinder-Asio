@@ -56,7 +56,6 @@ TcpServer::TcpServer( boost::asio::io_service& io )
 TcpServer::~TcpServer()
 {
 	cancel();
-	app::console() << "Destructing" << std::endl;
 }
 
 void TcpServer::accept( uint16_t port )
